@@ -1,6 +1,0 @@
-module Pods_AirportTests {
-  umbrella header "Pods-AirportTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
