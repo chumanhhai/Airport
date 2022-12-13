@@ -1,0 +1,6 @@
+module Pods_Airport {
+  umbrella header "Pods-Airport-umbrella.h"
+
+  export *
+  module * { export * }
+}
