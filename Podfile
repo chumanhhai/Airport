@@ -3,7 +3,6 @@
 
 def app_group
   pod 'RxSwift', '~> 6.5'
-  pod 'RxTest', '~> 6.5'
   pod 'RxCocoa', '6.5.0'
   pod 'RxDataSources', '~> 5.0'
   pod 'Swinject', '~> 2.7.1'
@@ -13,11 +12,16 @@ def app_group
   pod 'SwiftyJSON', '~> 5.0'
 end
 
+def test_group
+  pod 'RxTest', '~> 6.5'
+end
+
 target 'Airport' do
     app_group
 end
 
 target 'AirportTests' do
     app_group
+    test_group
 end
 
